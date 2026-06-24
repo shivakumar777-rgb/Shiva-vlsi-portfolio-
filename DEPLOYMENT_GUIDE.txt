@@ -35,7 +35,7 @@ Run these commands ONE by ONE:
     git add .
     git commit -m "Initial commit: Professional VLSI Portfolio"
 
-
+git remote add origin https://github.com/shivakumar777-rgb/Shiva-vlsi-portfolio-.git
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ## STEP 3 — CREATE GITHUB REPO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
