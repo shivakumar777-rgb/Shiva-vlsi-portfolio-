@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gunti Siva Kumar | VLSI & Physical Design Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ══ NAV ══ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="logo" href="#hero">GSK<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section id="hero">
+    <canvas id="circuit-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <img src="assets/shiva.jpg" alt="Gunti Siva Kumar" class="hero-photo" />
+      </div>
+      <p class="hero-eyebrow">B.Tech ECE · 2026 · CGPA 8.3</p>
+      <h1 class="hero-name">Gunti Siva Kumar</h1>
+      <h2 class="hero-title">VLSI Design &amp; Physical Design Engineer</h2>
+      <p class="hero-sub">RTL → GDSII · FPGA · Verilog HDL · STA · EDA Tools</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">Hire Me</a>
+        <a href="#projects" class="btn btn-outline">View Work</a>
+        <a href="https://wa.me/917842243722" target="_blank" class="btn btn-whatsapp" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.534 5.862L.054 23.467a.5.5 0 0 0 .617.612l5.758-1.51A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.003-1.371l-.36-.214-3.716.974.993-3.619-.234-.374A9.818 9.818 0 1 1 12 21.818z"/>
+          </svg>
+          WhatsApp
+        </a>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">// 01 · About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Chip design is <span class="accent">my craft</span></h2>
+          <p>
+            ECE graduate (B.Tech 2026, CGPA 8.3/10) from Narasaraopeta Engineering College, Ongole — passionate about everything from transistor physics to tape-out. I completed a <strong>6-month VLSI internship at DataValley</strong> covering the full FPGA design flow: RTL coding, functional simulation in ModelSim, synthesis, and hardware validation on Xilinx Spartan FPGA.
+          </p>
+          <p>
+            Currently undergoing <strong>Physical Design (Backend) training at Sumedha IT Institute, Hyderabad</strong> — covering RTL-to-GDSII flow, STA, SDC constraints, and EDA tools. I'm actively building real-world ASIC/FPGA skills and looking for my first full-time role in VLSI or Physical Design.
+          </p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">8.3</span><span class="stat-label">CGPA / 10</span></div>
+            <div class="stat"><span class="stat-num">6mo</span><span class="stat-label">VLSI Internship</span></div>
+            <div class="stat"><span class="stat-num">2+</span><span class="stat-label">FPGA Projects</span></div>
+            <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Certifications</span></div>
+          </div>
+        </div>
+        <div class="about-links">
+          <a href="https://github.com/shivakumar777-rgb" target="_blank" class="about-link-card">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/siva-kumar-gunti-512b2a287" target="_blank" class="about-link-card">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:sshivakumark3@gmail.com" class="about-link-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email Me
+          </a>
+          <a href="https://wa.me/917842243722" target="_blank" class="about-link-card whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.534 5.862L.054 23.467a.5.5 0 0 0 .617.612l5.758-1.51A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.003-1.371l-.36-.214-3.716.974.993-3.619-.234-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SKILLS ══ -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-label">// 02 · Skills</div>
+      <h2 class="section-title">Technical <span class="accent">Expertise</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>HDL / RTL Design</h3>
+          <div class="skill-chips">
+            <span class="chip chip-hot">Verilog HDL</span>
+            <span class="chip chip-hot">VHDL</span>
+            <span class="chip">RTL Design</span>
+            <span class="chip">FSM Design</span>
+            <span class="chip">Sequential Logic</span>
+            <span class="chip">Combinational Logic</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12"/></svg>
+          </div>
+          <h3>EDA Tools</h3>
+          <div class="skill-chips">
+            <span class="chip chip-hot">ModelSim</span>
+            <span class="chip chip-hot">Xilinx ISE</span>
+            <span class="chip">Cadence (Exposure)</span>
+            <span class="chip">Synopsys (Exposure)</span>
+            <span class="chip">Xilinx Vivado</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+          </div>
+          <h3>Physical Design</h3>
+          <div class="skill-chips">
+            <span class="chip chip-hot">RTL-to-GDSII</span>
+            <span class="chip chip-hot">STA</span>
+            <span class="chip">SDC / Timing Constraints</span>
+            <span class="chip">Floor Planning</span>
+            <span class="chip">CTS</span>
+            <span class="chip">Place & Route</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Verification</h3>
+          <div class="skill-chips">
+            <span class="chip chip-hot">Testbench Writing</span>
+            <span class="chip">Functional Simulation</span>
+            <span class="chip">Signal Analysis</span>
+            <span class="chip">Debugging</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h3>Digital Electronics</h3>
+          <div class="skill-chips">
+            <span class="chip">CMOS Basics</span>
+            <span class="chip">MOSFET Physics</span>
+            <span class="chip">Boolean Algebra</span>
+            <span class="chip">Flip-Flops</span>
+            <span class="chip">MUX / Decoders</span>
+            <span class="chip">Counters</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Scripting & Programming</h3>
+          <div class="skill-chips">
+            <span class="chip">Python</span>
+            <span class="chip">Tcl (Basic)</span>
+            <span class="chip">Shell / Bash</span>
+            <span class="chip">C / C++</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EXPERIENCE ══ -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-label">// 03 · Experience & Training</div>
+      <h2 class="section-title">Where I've <span class="accent">built skills</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item current">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-badge">Current</div>
+            <div class="tl-header">
+              <div>
+                <h3>Physical Design (Backend) Trainee</h3>
+                <p class="tl-org">Sumedha IT Institute · Hyderabad</p>
+              </div>
+              <span class="tl-date">May 2026 – Present</span>
+            </div>
+            <ul class="tl-list">
+              <li>Studying full RTL-to-GDSII flow: synthesis, floor planning, placement, CTS, routing, and sign-off.</li>
+              <li>Learning STA concepts, timing constraints (SDC), and professional EDA tool usage for backend design.</li>
+              <li>Practising Verilog RTL coding, gate-level netlists, and CMOS fundamentals including latchup, power dissipation, and scaling laws.</li>
+            </ul>
+            <div class="tl-tags">
+              <span>RTL-to-GDSII</span><span>STA</span><span>SDC</span><span>EDA Tools</span><span>CTS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div>
+                <h3>VLSI Design Intern</h3>
+                <p class="tl-org">DataValley · (in collaboration with APSCHE & CSCI)</p>
+              </div>
+              <span class="tl-date">Oct 2025 – Mar 2026</span>
+            </div>
+            <ul class="tl-list">
+              <li>Designed and simulated combinational & sequential digital circuits in VHDL: adders, multiplexers, decoders, and counters.</li>
+              <li>Executed end-to-end FPGA design flow: RTL coding → functional simulation in ModelSim → synthesis, place-and-route → hardware validation on Xilinx Spartan FPGA.</li>
+              <li>Gained hands-on knowledge of timing analysis, clock domain management, and FPGA resource utilization optimization.</li>
+              <li>Applied modular RTL design principles and hardware-software integration concepts in embedded system-level projects.</li>
+              <li>Maintained engineering documentation, test plans, and verification reports per industry best practices.</li>
+            </ul>
+            <div class="tl-tags">
+              <span>VHDL</span><span>ModelSim</span><span>Xilinx Spartan</span><span>FPGA</span><span>Timing Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div>
+                <h3>B.Tech — Electronics & Communication Engineering</h3>
+                <p class="tl-org">Narasaraopeta Engineering College · Ongole, AP</p>
+              </div>
+              <span class="tl-date">2022 – 2026</span>
+            </div>
+            <p class="tl-cgpa">CGPA: <strong>8.3 / 10</strong></p>
+            <div class="tl-tags">
+              <span>ECE</span><span>Digital Electronics</span><span>VLSI Fundamentals</span><span>Signals & Systems</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROJECTS ══ -->
+  <section id="projects" class="section section-dark">
+    <div class="container">
+      <div class="section-label">// 04 · Projects</div>
+      <h2 class="section-title">What I've <span class="accent">built</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-num">01</div>
+          <div class="project-top">
+            <h3>RTL Design & FPGA Implementation using VHDL</h3>
+            <div class="project-tools">
+              <span>Xilinx ISE</span><span>ModelSim</span><span>Spartan FPGA</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            Designed RTL-level combinational and sequential logic in VHDL; implemented Mealy & Moore FSMs with exhaustive simulation testbenches. Performed synthesis and timing analysis; optimized LUT and flip-flop utilization for area and timing performance. Validated designs on Xilinx Spartan FPGA through place-and-route and hardware debugging.
+          </p>
+          <div class="project-highlights">
+            <span>✦ Mealy & Moore FSMs</span>
+            <span>✦ LUT Optimization</span>
+            <span>✦ Hardware Validation</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-num">02</div>
+          <div class="project-top">
+            <h3>4-bit ALU & Flip-Flop Design (Verilog HDL)</h3>
+            <div class="project-tools">
+              <span>ModelSim</span><span>Verilog HDL</span><span>Xilinx Spartan</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            Designed a 4-bit ALU in Verilog HDL supporting ADD, SUB, AND, OR, XOR, and shift operations. Implemented D, JK, SR, and T Flip-Flops and register files; verified with comprehensive ModelSim testbenches. Deployed verified design on FPGA and strengthened RTL coding conventions and functional verification skills.
+          </p>
+          <div class="project-highlights">
+            <span>✦ 6 ALU Operations</span>
+            <span>✦ 4 Flip-Flop Types</span>
+            <span>✦ FPGA Deployment</span>
+          </div>
+        </div>
+
+        <div class="project-card project-card-wide">
+          <div class="project-num">03</div>
+          <div class="project-top">
+            <h3>Traffic Light Controller — VHDL FPGA Project</h3>
+            <div class="project-tools">
+              <span>VHDL</span><span>FSM</span><span>Xilinx ISE</span><span>ModelSim</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            Designed a Traffic Light Controller using Moore-type FSM in VHDL, targeting Xilinx Spartan FPGA. Covered complete design from state diagram (RED → GREEN → YELLOW) through RTL coding, simulation testbench, synthesis, and FPGA implementation. Applied clock/reset management and verified waveforms through ModelSim simulation.
+          </p>
+          <div class="project-highlights">
+            <span>✦ Moore FSM</span>
+            <span>✦ Clock/Reset Design</span>
+            <span>✦ Full RTL-to-FPGA Flow</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CERTIFICATIONS ══ -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-label">// 05 · Certifications & Achievements</div>
+      <h2 class="section-title">Recognition &amp; <span class="accent">learning</span></h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-icon">🏆</div>
+          <h4>VLSI Design Fundamentals</h4>
+          <p>Core concepts in digital design, HDL, and semiconductor fundamentals</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">📊</div>
+          <h4>MATLAB for Engineers</h4>
+          <p>Coursera — Signal processing and numerical computation</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🌐</div>
+          <h4>NPTEL — Internet of Things (IoT)</h4>
+          <p>Hardware-software integration and embedded systems concepts</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🐍</div>
+          <h4>Python Foundation</h4>
+          <p>Infosys Springboard — Core programming and scripting fundamentals</p>
+        </div>
+      </div>
+      <div class="achievements-row">
+        <div class="achievement">
+          <span class="ach-icon">🚀</span>
+          <div>
+            <strong>Smart India Hackathon (SIH)</strong>
+            <p>National Level Participant</p>
+          </div>
+        </div>
+        <div class="achievement">
+          <span class="ach-icon">🥇</span>
+          <div>
+            <strong>National Level Ideathon</strong>
+            <p>Finalist — Product Innovation & Problem Solving</p>
+          </div>
+        </div>
+        <div class="achievement">
+          <span class="ach-icon">💻</span>
+          <div>
+            <strong>GitHub Contributor</strong>
+            <p>Active hardware design & academic projects</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section id="contact" class="section section-dark">
+    <div class="container contact-container">
+      <div class="section-label">// 06 · Contact</div>
+      <h2 class="section-title">Let's <span class="accent">connect</span></h2>
+      <p class="contact-sub">Open to VLSI, FPGA & Physical Design roles. Let's talk.</p>
+      <div class="contact-grid">
+        <a href="tel:+917842243722" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div>
+            <strong>Phone / Call</strong>
+            <span>+91 78422 43722</span>
+          </div>
+        </a>
+        <a href="mailto:sshivakumark3@gmail.com" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <div>
+            <strong>Email</strong>
+            <span>sshivakumark3@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://wa.me/917842243722" target="_blank" class="contact-card contact-wa">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.534 5.862L.054 23.467a.5.5 0 0 0 .617.612l5.758-1.51A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.003-1.371l-.36-.214-3.716.974.993-3.619-.234-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>
+          <div>
+            <strong>WhatsApp</strong>
+            <span>Message directly</span>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/siva-kumar-gunti-512b2a287" target="_blank" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="28"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <div>
+            <strong>LinkedIn</strong>
+            <span>siva-kumar-gunti</span>
+          </div>
+        </a>
+        <a href="https://github.com/shivakumar777-rgb" target="_blank" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="28"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          <div>
+            <strong>GitHub</strong>
+            <span>shivakumar777-rgb</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="logo">GSK<span class="dot">.</span></span>
+      <p>© 2026 Gunti Siva Kumar · Built with passion for silicon</p>
+      <a href="https://wa.me/917842243722" target="_blank" class="footer-wa">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.534 5.862L.054 23.467a.5.5 0 0 0 .617.612l5.758-1.51A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.003-1.371l-.36-.214-3.716.974.993-3.619-.234-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>
+        Chat on WhatsApp
+      </a>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/917842243722" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.534 5.862L.054 23.467a.5.5 0 0 0 .617.612l5.758-1.51A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.003-1.371l-.36-.214-3.716.974.993-3.619-.234-.374A9.818 9.818 0 1 1 12 21.818z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

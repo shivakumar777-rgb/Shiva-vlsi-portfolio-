@@ -1,0 +1,97 @@
+# 🚀 Portfolio Deployment Guide — Gunti Siva Kumar
+# From VS Code → GitHub → Vercel
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## STEP 1 — SET UP YOUR FOLDER IN VS CODE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Extract the downloaded ZIP file "portfolio.zip"
+2. Open VS Code
+3. File → Open Folder → select the extracted "portfolio" folder
+4. You should see this structure:
+   portfolio/
+   ├── index.html
+   ├── vercel.json
+   ├── .gitignore
+   ├── css/
+   │   └── style.css
+   ├── js/
+   │   └── main.js
+   └── assets/
+       └── shiva.jpg
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## STEP 2 — INITIALIZE GIT (VS Code Terminal)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Open Terminal in VS Code → View → Terminal (or Ctrl + `)
+
+Run these commands ONE by ONE:
+
+    git init
+    git config user.name "Gunti Siva Kumar"
+    git config user.email "sshivakumark3@gmail.com"
+    git add .
+    git commit -m "Initial commit: Professional VLSI Portfolio"
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## STEP 3 — CREATE GITHUB REPO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Go to https://github.com and log in (shivakumar777-rgb)
+2. Click the "+" button (top right) → "New repository"
+3. Repository name: "my-portfolio"   (or "shiva-vlsi-portfolio")
+4. Make it PUBLIC
+5. DO NOT tick "Add README" — leave everything unchecked
+6. Click "Create repository"
+
+GitHub will show you commands. Run these in VS Code terminal:
+
+    git remote add origin https://github.com/shivakumar777-rgb/my-portfolio.git
+    git branch -M main
+    git push -u origin main
+
+    (GitHub will ask for your username + password/token)
+    → If it asks for password, use a Personal Access Token (PAT):
+      GitHub → Settings → Developer Settings → Personal Access Tokens → Generate new token
+      Give it "repo" scope. Use that token as your password.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## STEP 4 — DEPLOY TO VERCEL (Free)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Go to https://vercel.com
+2. Click "Sign Up" → Continue with GitHub
+3. After login → Click "Add New Project"
+4. Import your "my-portfolio" repo
+5. Framework Preset: Other (or leave as auto-detected)
+6. Click "Deploy" — that's it!
+
+Your live URL will be something like:
+  https://my-portfolio-shiva.vercel.app
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## STEP 5 — UPDATING THE PORTFOLIO LATER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Whenever you make changes, run in VS Code terminal:
+
+    git add .
+    git commit -m "Update: describe what you changed"
+    git push
+
+Vercel auto-deploys every time you push to GitHub! ✅
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## QUICK REFERENCE — COMMON GIT COMMANDS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Check what files changed:      git status
+See commit history:            git log --oneline
+Push changes:                  git add . && git commit -m "msg" && git push
+Check remote URL:              git remote -v
